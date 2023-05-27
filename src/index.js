@@ -4,17 +4,23 @@ import ReactDOM from 'react-dom/client';
 
  const BookList = () => {
   return (
-    <section>BookList</section>
+      <Book />
   )
 }
 
  const Book = () => {
   return (
-    <article>Book</article>
+    <>
+    <Title />
+    <Image />
+    <Author />
+    </>
   )
 }
 
 const Image = () => <h2>Image placeholder</h2>
+const Title = () => <h2>Title placeholder</h2>
+const Author = () => <h2>Author placeholder</h2>
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
