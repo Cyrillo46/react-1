@@ -4,7 +4,15 @@ import ReactDOM from 'react-dom/client';
 
  const BookList = () => {
   return (
+    <>
       <Book />
+      <Book />
+      <Book />
+      <Book />
+      <Book />
+      <Book />
+      <Book />
+      </>
   )
 }
 
