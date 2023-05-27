@@ -1,7 +1,12 @@
 import React from 'react'
+import Title from './Title'
+import Message from './Message'
 
 export default function Greeting() {
   return (
-    <h2>Finally working</h2>
+    <>
+    <Title />
+    <Message />
+    </>
   )
 }
