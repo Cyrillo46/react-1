@@ -11,7 +11,7 @@ const img = "https://m.media-amazon.com/images/I/31DRXvr5JKL._SY291_BO1,204,203,
  const BookList = () => {
   return (
     <section className="booklist">
-      <Book title="Test"/>
+      <Book title={title} author={author} img={img} />
       <Book author='another test' number={11}/>
       </section>
   )
