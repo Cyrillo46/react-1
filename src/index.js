@@ -12,7 +12,7 @@ const img = "https://m.media-amazon.com/images/I/31DRXvr5JKL._SY291_BO1,204,203,
   return (
     <section className="booklist">
       <Book title={title} author={author} img={img} />
-      <Book title={title} author={author} img={img}/>
+      <Book title={title} author={author} img={img} />
       </section>
   )
 }
@@ -29,7 +29,6 @@ const img = "https://m.media-amazon.com/images/I/31DRXvr5JKL._SY291_BO1,204,203,
     </article>
    )
  }
-
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));

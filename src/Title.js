@@ -1,4 +1,3 @@
-import React from 'react'
 
 const Title = () => <h2>Things Black People Weren't Taught</h2>
 
