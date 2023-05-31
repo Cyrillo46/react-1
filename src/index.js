@@ -7,20 +7,22 @@ const Books = [
   {
     author: 'Raymond K Boseman',
     title: "Things Black People Weren't Taught",
-    img: "https://m.media-amazon.com/images/I/31DRXvr5JKL._SY291_BO1,204,203,200_QL40_FMwebp_.jpg"
+    img: "https://m.media-amazon.com/images/I/31DRXvr5JKL._SY291_BO1,204,203,200_QL40_FMwebp_.jpg",
+    id: 1
     }, 
     {
       author: 'Chuck Callaway',
       title: "Practical Joint Manipulation",
-      img: "https://m.media-amazon.com/images/I/41GP3IUNOLL.jpg"
-      }
+      img: "https://m.media-amazon.com/images/I/41GP3IUNOLL.jpg",
+      id: 2
+      },
 ]
 
  const BookList = () => {
    return (
      <section className="booklist">{Books.map((book) => {
-      const { title, author, img } = book;
-      return <Book img={img} title={title} author={author} />
+      const { title, author, img, id} = book;
+      return <Book img={img} title={title} author={author} key={id} />
     })}</section>
   )
 }
