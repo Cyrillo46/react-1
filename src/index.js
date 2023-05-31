@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-// import Book from 'Book.js'
+import Book from './Book.js'
 
 const Books = [
   {
@@ -15,9 +15,9 @@ const Books = [
       img: "https://m.media-amazon.com/images/I/41GP3IUNOLL.jpg"
       }
 ]
-
+/*
 const Book = (props) => {
-  const { title, author, img} = Books;
+  const { title, author, img} = props;
       return (
       <article className="book">
       <img src={img} alt={title} />
@@ -26,6 +26,7 @@ const Book = (props) => {
       </article>
   )
 }
+*/
 
  const BookList = () => {
    return (
