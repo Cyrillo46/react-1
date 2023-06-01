@@ -21,8 +21,8 @@ const Books = [
  const BookList = () => {
    return (
      <section className="booklist">
-      {Books.map(({ title, author, img, id}) => {
-      return <Book img={img} title={title} author={author} key={id} />
+      {Books.map((book) => {
+      return <Book {...book} />
     })}</section>
   )
 }
@@ -30,4 +30,5 @@ const Books = [
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(<BookList />);
+
 
