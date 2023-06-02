@@ -1,5 +1,5 @@
 const EventExamples = () => {
-    const handleFormInput = () => console.log('Form input')
+    const handleFormInput = (e) => console.log(e.target)
     const handleButtonClick = () => alert('Handle Button Click')
   return (
     <section>
