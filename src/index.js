@@ -2,6 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import Book from './Book.js'
+import EventExamples from './Events';
 
 const Books = [
   {
@@ -21,6 +22,7 @@ const Books = [
  const BookList = () => {
    return (
      <section className="booklist">
+       <EventExamples />
       {Books.map((book) => {
       return <Book {...book} />
     })}</section>
