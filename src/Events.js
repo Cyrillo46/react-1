@@ -1,6 +1,4 @@
 const EventExamples = () => {
-    const handleFormInput = (e) => console.log(e.target)
-    const handleButtonClick = () => alert('Handle Button Click')
     const handleFormSubmission = (e) => {
         e.preventDefault()
         console.log('Handle Form Submit') 
@@ -12,11 +10,11 @@ const EventExamples = () => {
             <h2>Events</h2>
             <input type="text" 
             name="Events"
-            onChange={handleFormInput}
+            onChange={(e) => console.log(e.target)}
             style={{ margin: '1rem 0' }}
             />
         </form>
-        <button type="submit" onClick={handleFormSubmission}>Submit</button>
+        <button type="submit" onClick={() => alert('Handle Button Click')}>Submit</button>
     </section>
   )
 }
