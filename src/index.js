@@ -13,8 +13,8 @@ const BookList = () => {
   return (
     <section className="booklist">
       <EventExamples />
-      {Books.map((book) => {
-        return <Book {...book} getBook={getBook} />;
+      {Books.map((book, idx) => {
+        return <Book {...book} getBook={getBook} number={idx} />;
       })}
     </section>
   );
