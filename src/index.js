@@ -2,29 +2,21 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import Book from './Book.js'
+import Books from './Books.js'
 import EventExamples from './Events';
 
-const Books = [
-  {
-    author: 'Raymond K Boseman',
-    title: "Things Black People Weren't Taught",
-    img: "https://m.media-amazon.com/images/I/31DRXvr5JKL._SY291_BO1,204,203,200_QL40_FMwebp_.jpg",
-    id: 1
-    }, 
-    {
-      author: 'Chuck Callaway',
-      title: "Practical Joint Manipulation",
-      img: "https://m.media-amazon.com/images/I/41GP3IUNOLL.jpg",
-      id: 2
-      },
-]
+
 
  const BookList = () => {
+  const getBook = (id) => {
+  const books = Book.find(book => book.id === id)
+  console.log(books)
+}
    return (
      <section className="booklist">
        <EventExamples />
       {Books.map((book) => {
-      return <Book {...book} />
+      return <Book {...book} getBook={getBook}/>
     })}</section>
   )
 }

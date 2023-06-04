@@ -9,4 +9,4 @@ const Book = ({ img, title, author }) => {
       </article>
   )
 }
-  export default Book
+  export default Book;
