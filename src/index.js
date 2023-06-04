@@ -3,7 +3,6 @@ import ReactDOM from "react-dom/client";
 import "./index.css";
 import Book from "./Book.js";
 import Books from "./Books.js";
-import EventExamples from "./Events";
 
 const BookList = () => {
   const getBook = (id) => {
@@ -12,7 +11,6 @@ const BookList = () => {
   };
   return (
     <section className="booklist">
-      <EventExamples />
       {Books.map((book, idx) => {
         return <Book {...book} getBook={getBook} number={idx} />;
       })}
